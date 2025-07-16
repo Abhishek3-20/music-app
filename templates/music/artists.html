@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover your favorite artists.">
+    <title>Choose Your Favorite Artist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body class="artists">
+    <!-- Moved background div to be first element in body -->
+    <div class="page-background">
+        <div class="background-wrapper" style="background-image: url('{% static 'music/img 4.jpg' %}');"></div>
+    </div>
+
+    <header>
+        <div class="header-container">
+      
+          <!-- Left: Tagline or logo -->
+          <div class="header-left">
+            <div class="site-tagline">🎵 Music is the Answer</div>
+          </div>
+      
+          <!-- Center: Navigation links -->
+          <nav class="header-nav">
+            <a href="{% url 'landing' %}">Home</a>
+            <a href="{% url 'artists' %}">Artists</a>
+            <a href="{% url 'listen' %}">Listen</a>
+            <a href="{% url 'playlists' %}">Playlists</a>
+          </nav>
+      
+          <!-- Right: User Info -->
+          {% if user.is_authenticated %}
+            <div class="user-info-header">
+              <i class="fas fa-user-circle"></i> {{ user.username }}
+            </div>
+          {% endif %}
+      
+        </div>
+      </header>
+      
+    
+    <div class="main-content">
+        <div class="overlay">
+            <h1 class="title">Choose Your Favorite Artist</h1>
+            <div class="artist-grid">
+                <div class="artist-card">
+                    <img src="{% static 'music/img 2.jpg' %}" alt="Artist" width="150">
+                    <h3>Artist Name</h3>
+                    <p>12 Songs • Pop</p>
+                </div>
+                <!-- Add more artist cards as needed -->
+            </div>
+            
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Music is the Answer. All rights reserved. | <a href="#">Privacy</a> | <a href="#">Contact</a></p>
+    </footer>
+</body>
+</html>
