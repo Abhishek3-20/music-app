@@ -99,3 +99,25 @@ Developed by Abhishek Unni
 
 📜 License
 This project is open-source and available under the MIT License.
+
+
+
+
+
+
+
+
+# requirements
+
+Django>=4.2,<5.0
+gunicorn>=21.2.0
+whitenoise>=6.6.0
+dj-database-url>=2.1.0
+python-dotenv>=1.0.1
+
+# Optional (if using Vercel or WSGI-based deployment)
+vercel-wsgi>=0.5.6
+
+# If you're using Pillow for image handling (optional)
+Pillow>=10.2.0
+
