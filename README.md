@@ -11,9 +11,15 @@ A sleek and responsive music streaming web application built using **Django** an
 
 ## 📸 Screenshots
 
-![Landing Page](screenshots/landing.png)
-![Music Player](screenshots/player.png)
-![Playlist Page](screenshots/playlist.png)
+![Landing Page]
+<img width="1338" height="581" alt="Screenshot (12)" src="https://github.com/user-attachments/assets/028f22ca-1446-43d0-9613-3b945dba23cf" />
+
+![login page]
+<img width="1351" height="575" alt="Screenshot (11)" src="https://github.com/user-attachments/assets/0970acc9-793a-4e6e-9420-eb335bbd3eae" />
+
+![artist Page]
+<img width="1366" height="638" alt="Screenshot (14)" src="https://github.com/user-attachments/assets/29b3b29f-8e2b-45fb-8cd9-9a7ffb4934cf" />
+
 
 ---
 
@@ -36,6 +42,7 @@ A sleek and responsive music streaming web application built using **Django** an
 
 ---
 
+
 ## 📂 Project Structure
 
 music_site/
@@ -47,42 +54,34 @@ music_site/
 ├── manage.py
 └── README.md
 
-yaml
-Copy
-Edit
 
----
+
 
 ## ⚙️ Local Setup
 
 1. **Clone the repo**
-   ```bash
+2. 
    git clone https://github.com/abhishek3-20/music_site.git
-   cd music_site
-Create virtual environment
 
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+    cd music_site
+    Create virtual environment
+
+
+    python -m venv venv
+    source venv/bin/activate
+    # Windows: venv\Scripts\activate.bat
+
 Install dependencies
 
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
 Run migrations
 
-bash
-Copy
-Edit
+
 python manage.py migrate
+
 Run the server
 
-bash
-Copy
-Edit
 python manage.py runserver
 Visit: http://127.0.0.1:8000/
 
